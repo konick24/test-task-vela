@@ -1,0 +1,30 @@
+.bar {
+  background-color: #f4f4f4;
+  color: #343a3f;
+}
+
+.bar__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.bar__list {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bar__link {
+  display: inline-block;
+  padding: 8px;
+  color: #343a3f;
+  text-decoration: none;
+
+  &:hover {
+    color: #4888ff;
+  }
+}

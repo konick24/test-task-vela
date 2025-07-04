@@ -1,0 +1,21 @@
+@use "./variables.scss" as v;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  // background-color: ;
+  font-size: 14px;
+  line-height: 19px;
+  color: v.$text-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

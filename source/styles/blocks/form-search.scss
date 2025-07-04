@@ -1,0 +1,31 @@
+.form-search__container {
+ position: relative;
+}
+
+.form-search__input {
+  padding: 13px 105px 13px 24px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid rgba(72, 136, 255, 0.2);
+  border-radius: 8px;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.form-search__button {
+  position: absolute;
+  padding: 11px 20px;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  color: #ffffff;
+  background-color: #4888ff;
+  border-radius: 4px;
+  cursor: pointer;
+}

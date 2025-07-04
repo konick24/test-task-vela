@@ -1,0 +1,46 @@
+.switch-language {
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/icon-planet.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 24px 24px;
+  }
+}
+
+.switch-language__button {
+  position: relative;
+  color: rgba(52, 58, 63, 0.4);
+  background-color: #ffffff;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 9px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 12px;
+      background-color: #343a3f;
+      left: -5px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+
+  &--active {
+    color: #343a3f;
+  }
+}

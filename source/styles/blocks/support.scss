@@ -1,0 +1,43 @@
+.support__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.support__link {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #343a3f;
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    mask-size: 24px 24px;
+  }
+
+  &--telegram:after {
+    mask-image: url("../../icons/icon-telegram.svg");
+  }
+
+  &--whatsapp:after {
+    mask-image: url("../../icons/icon-whatsapp.svg");
+  }
+
+}

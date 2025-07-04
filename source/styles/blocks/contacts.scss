@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  gap: 12px;
+}
+
+.contacts__info {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    background-color: #343a3f;
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    mask-size: 16px 16px;
+  }
+
+  &--address {
+    padding-left: 20px;
+
+    &:before {
+      mask-image: url("../../icons/map-mark.svg");
+    }
+  }
+
+  &--phone-number {
+    padding-left: 24px;
+
+    &:before {
+      mask-image: url("../../icons/icon-mobile.svg");
+    }
+  }
+}
